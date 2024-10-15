@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* common shred styles */
+* {
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* Content styles */
+.kzui-content {
+  display: flex;
+  min-height: 100vh;
+}
+
+.kzui-content__full {
+  width: 100%;
+  height: 100%;
+}
+
+/* Sidebar styles */
+.kzui-sidebar {
+  width: 10%;
+  min-width: 160px;
+  background-color: #1D2327;
+  font-family: "Inter", sans-serif;
+}
+
+.kzui-sidebar__flex {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.kzui-sidebar__flex h6 {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.kzui-sidebar__highlight {
+  padding: 0.625rem 1rem;
+  background-color: #2271B1;
+}
+
+.kzui-sidebar__menu {
+  background-color: #2B3136;
+}
+
+.kzui-sidebar__navlink {
+  display: flex;
+  padding: 0.5rem 1rem;
+  color: #C7C7C7;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kzui-sidebar__navlink p {
+  font-size: 0.75rem;
+}
+
+.kzui-sidebar__navlink--active {
+  color: #58A3DF;
+  font-weight: 500;
+  padding: 0.875rem 1rem;
+}
+
+.kzui-sidebar__navlink--highlight {
+  color: #FDB022;
+}
+
+.kzui-sidebar hr {
+  height: 1px;
+  color: #DDDDDF;
+  margin: 0 1rem;
+  opacity: 10%;
+}
+
+/* Navbar styles */
+.kzui-navbar {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1 0 0;
+  align-items: center;
+  border-bottom: 1px solid #E5E5E6;
+  box-shadow: 0px 1px 2px 0px rgba(229, 229, 230, 0.24);
+  padding: 0 1.5rem;
+}
+
+.kzui-navbar__tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.kzui-navbar__tab {
+  border: none;
+  color: #595959;
+  padding: 1rem 0.75rem;
+}
+
+.kzui-navbar__tab--active {
+  color: #0F0E16;
+  font-weight: 500;
+  border-bottom: 2px solid #13191B;
+}
+
+/* Main content styles */
+.kzui-settings {
+  width: 63%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.kzui-settings__flex {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.kzui-settings__heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+/* Menu styles */
+.kzui-menu {
+  width: 30%;
+  height: fit-content;
+  max-width: 280px;
+  padding: 0.625rem 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid #DDDDDF;
+  box-shadow: 0px 1px 2px 0px rgba(229, 229, 230, 0.24);
+}
+
+.kzui-menu h6 {
+  color: #A7AAAD;
+  font-size: 0.75rem;
+  padding: 6px 8px 4px 8px;
+}
+
+.kzui-menu__item {
+  display: flex;
+  gap: 6px;
+  color: #74777C;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.kzui-menu__item--active {
+  background-color: #F4F4F5;
+  border-radius: 0.5rem;
+}
+
+.kzui-menu__item--active p {
+  color: #0F0E16;
+  font-weight: 600;
+}
+
+/* Design System Styles */
+.kzui-design {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid #DDDDDF;
+  box-shadow: 0px 1px 2px 0px rgba(229, 229, 230, 0.24);
+}
+
+.kzui-design__heading {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 1.25rem 0;
+  padding: 0 1.5rem;
+}
+
+.kzui-design hr {
+  height: 1px;
+  color: #DDDDDF;
+  opacity: 30%;
+  margin: 0 1.5rem;
+}
+
+.kzui-design__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+/* Design System tabs styles */
+.kzui-design__tabs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.kzui-design__tab {
+  border: none;
+  color: #74777C;
+  padding: 1rem 0;
+}
+
+.kzui-design__tab--active {
+  color: #0F0E16;
+  border-bottom: 2px solid #13191B;
+}
+
+/* Design System search styles */
+.kzui-design__input {
+  border-radius: 6px;
+  border: 1px solid #DDDDDF;
+  padding: 0.25rem 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.kzui-design__input input {
+  border: none;
+  outline: none;
+}
+
+/* Design System table styles */
+.kzui-design__table {
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  overflow-y: scroll;
+  height: 65vh;
+}
+
+.kzui-design__table td:first-child {
+  width: 16px;
+  padding-left: 0.5rem;
+}
+
+.kzui-design__table th:nth-child(2) {
+  width: 45%;
+}
+
+.kzui-design__table th:last-child {
+  width: 55%;
+}
+
+.kzui-design__table th:nth-child(2),
+.kzui-design__table td:nth-child(2),
+.kzui-design__table th:last-child,
+.kzui-design__table td:last-child {
+  border-bottom: 1px solid #DDDDDF;
+  padding: 0.75rem 0.5rem;
+  margin-right: 1.125rem;
+}
+
+.kzui-design__table tr {
+  transition: background-color 0.3s ease;
+  cursor: grab;
+}
+
+.kzui-design__table tr:hover td:nth-child(2),
+.kzui-design__table tr:hover td:nth-child(3) {
+  background-color: #F4F4F5;
+}
+
+.kzui-design__table tr:active {
+  cursor: grabbing;
+}
+
+/* Design System table name column styles */
+.kzui-design__table--content {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #454D54;
+}
+
+.kzui-design__table--content p {
+  font-size: 0.75rem;
+}
+
+/* Design System table value column styles */
+.kzui-design__table--value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.kzui-design__table--value-box {
+  width: 40%;
+  border: 1px solid #DDDDDF;
+  border-radius: 0.25rem;
+  padding-left: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.kzui-design__table--value p {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-left: 1px solid #DDDDDF;
+}
+
+.kzui-design__table--color {
+  border: 1px solid #DDDDDF;
+  border-radius: 0.25rem;
+  width: 16px;
+  height: 16px;
+}
+
+/* Design System table menu styles */
+.kzui-design__table--menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.kzui-design__menu-icon {
+  display: none;
+  cursor: pointer;
+  width: 1.4rem;
+  height: auto;
+}
+
+.kzui-design__table tr:hover .kzui-design__menu-icon,
+.kzui-design__table tr:hover .kzui-design__table--drag {
+  display: block;
+  visibility: visible;
+}
+
+.kzui-design__table--menu:hover .kzui-design__dropdown,
+.kzui-design__table--menu:active .kzui-design__dropdown {
+  display: block;
+}
+
+.kzui-design__dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px 0px rgba(19, 25, 27, 0.16);
+  z-index: 10;
+  padding: 0.5rem 0;
+  width: 100%;
+  min-width: 100px;
+}
+
+.kzui-design__dropdown button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-size: 0.75rem;
+  gap: 0.25rem;
+}
+
+.kzui-design__dropdown button:hover {
+  background-color: #F4F4F5;
+}
+
+.kzui-design__disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Design System table drag icon styles */
+.kzui-design__table--drag {
+  visibility: hidden;
+}
+
+/* Design System table add color styles */
+.kzui-design__table--add {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #74777C;
+  cursor: pointer;
+  padding: 1rem 0;
+  border-bottom: none !important;
+}
+
+.kzui-design__table--add p {
+  font-size: 0.75rem;
+}
+
+.kzui-design__table--add:hover {
+  background-color: transparent !important;
+}
+
+/* Drawer styles */
+.kzui-drawer {
+  position: fixed;
+  top: 26%;
+  right: 18%;
+  min-width: 296px;
+  height: fit-content;
+  background-color: #fff;
+  box-shadow: -12px 0px 24px -12px rgba(19, 25, 27, 0.08);
+  padding: 1.25rem;
+  z-index: 100;
+  border: 1px solid #DDDDDF;
+}
+
+.kzui-drawer__heading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.kzui-drawer__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.kzui-drawer__value-box {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid #DDDDDF;
+  padding-left: 0.25rem;
+  border-radius: 0.25rem;
+  width: 50%;
+}
+
+.kzui-drawer__value-box p {
+  padding: 0.25rem 0.5rem;
+  border-left: 1px solid #DDDDDF;
+}
+
+.kzui-drawer__color {
+  width: 18px;
+  height: 18px;
+  border-radius: 0.25rem;
+  border: 1px solid #DDDDDF;
+}
+
+.kzui-design__value-box p {
+  padding: 0.25rem 0.5rem;
+  border-left: 1px solid #DDDDDF;
+}
+
+.kzui-design__slider {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.kzui-drawer__submit {
+  background-color: #2271b1;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.kzui-drawer__close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+kzui-drawer__actions {
+  display: flex;
+  align-items: center;
+}
+
+.kzui-drawer__cancel {
+  width: 47%;
+  font-size: 500;
+  border-radius: 0.5rem;
+  border: 1px solid #DDDDDF;
+  padding: 0.5rem 1rem;
+  margin-right: 12px;
+}
+
+.kzui-drawer__submit {
+  width: 47%;
+  color: #FFF;
+  font-size: 500;
+  border-radius: 0.5rem;
+  background-color: #13191B;
+  padding: 0.5rem 1rem;
+}
+
+.kzui-drawer__input {
+  width: 100%;
+  border: 1px solid #DDDDDF;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.kzui-drawer input {
+  border: none;
+  outline: none;
+}
+
+.kzui-drawer__full {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Color Picker styles */
+.kzui-color-picker {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.sketch-picker {
+  width: 100% !important;
+  max-width: 256px !important;
+  padding: 15px 12.328px 11px 10.922px !important;
+  border-radius: 12px !important;
+  border: 1px solid #DDDDDF !important;
+  box-shadow: 0px 8px 48px 0px rgba(19, 25, 27, 0.08) !important;
+}
