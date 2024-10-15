@@ -112,7 +112,7 @@ const DesignSystem = () => {
                   handleEdit={ handleEditColor }
                   handleDuplicate={ handleDuplicateColor }
                   handleDelete={ handleDeleteColor }
-                  isInitialColor={ initialColors.some((color) => color.id === item.id) } // Check if it's an initial color
+                  isInitialColor={ initialColors.some((color) => color.id === item.id) } // Check if it"s an initial color
                 />
               )) }
               <tr>

@@ -4,12 +4,15 @@ A simple color management system that allows users to manage a list of colors. U
 
 ## Table of Contents
 
+- [Live Demo](#live-demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
+## Live Demo
+
+Check out the live version of the website here: [Live Link](https://kodezentask24.netlify.app/)
 
 ## Features
 

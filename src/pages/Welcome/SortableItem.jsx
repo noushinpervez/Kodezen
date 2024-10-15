@@ -1,5 +1,6 @@
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
+import PropTypes from "prop-types"; 
 
 import colorIcon from "../../assets/color.svg";
 import menu from "../../assets/menu.svg";
@@ -53,6 +54,15 @@ const SortableItem = ({ id, item, handleEdit, handleDuplicate, handleDelete, isI
       </td>
     </tr>
   );
+};
+
+SortableItem.propTypes = {
+  id: PropTypes.number,
+  item: PropTypes.object,
+  handleEdit: PropTypes.func,
+  handleDuplicate: PropTypes.func,
+  handleDelete: PropTypes.func,
+  isInitialColor: PropTypes.bool,
 };
 
 export default SortableItem;
